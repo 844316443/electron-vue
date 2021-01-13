@@ -4,16 +4,16 @@
   "description": "A Vue.js project",
   "author": "jayce",
   "private": true,
-  "main":"main.js",
+  "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
     "abc": "npm run build && electron build/electron.js",
     "show": "npm run build && electron .",
-    "pag":"electron-packager . electron桌面端 --platform=win32 --arch=x64 --icon=favicon.ico --out=./out --asar --app-version=1.0.0 --overwrite --ignore=node_modules --electron-version 10.1.1"
+    "pag": "electron-packager . desktopApplication --platform=win32 --arch=x64 --icon=favicon.ico --out=./out --asar --app-version=1.0.0 --overwrite --ignore=node_modules"
   },
-  "license":"ISC",
+  "license": "ISC",
   "dependencies": {
     "element-ui": "^2.14.1",
     "vue": "^2.5.2",

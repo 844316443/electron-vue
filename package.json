@@ -11,7 +11,7 @@
     "build": "node build/build.js",
     "abc": "npm run build && electron build/electron.js",
     "show": "npm run build && electron .",
-    "pag": "electron-packager . desktopApplication --platform=win32 --arch=x64 --icon=favicon.ico --out=./out --asar --app-version=1.0.0 --overwrite --ignore=node_modules"
+    "packager": "electron-packager . desktopApplication --platform=win32 --arch=x64 --icon=favicon.ico --out=./out --asar --app-version=1.0.0 --overwrite --ignore=node_modules"
   },
   "license": "ISC",
   "dependencies": {
